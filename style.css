@@ -134,6 +134,10 @@ nav a {
 .cards {
   justify-items: center;
 }
+.card{
+    opacity: 1;
+  transform: translateY(0);
+}
 
 /* MOBILE */
 @media (max-width: 768px) {
