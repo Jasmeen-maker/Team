@@ -416,18 +416,6 @@ footer {
 }
 
 /* LINK BUTTON */
-.member a {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #005696, #003f73);
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 500;
-  transition: 0.3s;
-}
 
 /* BUTTON HOVER */
 .member a:hover {
