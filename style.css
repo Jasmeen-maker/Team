@@ -36,16 +36,18 @@ nav a {
 /* CONTAINER */
 .container {
   padding: 40px;
+  min-height: 400px;
 }
 
-/* CARDS */
+/* CARDS (FIXED RESPONSIVE GRID) */
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   justify-items: center;
 }
 
+/* CARD */
 .card {
   background: white;
   padding: 15px;
@@ -53,8 +55,8 @@ nav a {
   text-align: center;
   width: 250px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  opacity: 0;
-  transform: translateY(40px);
+  opacity: 1;
+  transform: translateY(0);
   transition: 0.4s;
 }
 
@@ -69,6 +71,7 @@ nav a {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: 0.4s;
 }
 
 /* OVERLAY */
@@ -87,8 +90,10 @@ nav a {
 .overlay a {
   color: white;
   font-size: 28px;
+  text-decoration: none;
 }
 
+/* HOVER EFFECT */
 .img-box:hover .overlay {
   opacity: 1;
 }
@@ -107,36 +112,9 @@ nav a {
   font-size: 14px;
 }
 
-/* WEB APP */
-.app-section {
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
-}
-
-.app-box {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  text-align: center;
-  width: 400px;
-}
-
-.app-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #005696;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-}
-.cards {
-  justify-items: center;
-}
-.card{
-    opacity: 1;
-  transform: translateY(0);
+/* FOOTER */
+footer {
+  padding: 20px;
 }
 
 /* MOBILE */
