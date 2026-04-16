@@ -363,3 +363,87 @@ footer {
 .member a:hover {
   text-decoration: underline;
 }
+/* ================= LINKEDIN PREMIUM STYLE ================= */
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* MAIN BOX */
+.link-box {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* EACH MEMBER */
+.member {
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.member:last-child {
+  border-bottom: none;
+}
+
+/* HOVER EFFECT */
+.member:hover {
+  background: #f8fbff;
+  transform: scale(1.02);
+  border-radius: 10px;
+}
+
+/* NAME */
+.member h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* LINK BUTTON */
+.member a {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #005696, #003f73);
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.member a:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* SMALL ANIMATION */
+.member {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s forwards;
+}
+
+.member:nth-child(1) { animation-delay: 0.1s; }
+.member:nth-child(2) { animation-delay: 0.2s; }
+.member:nth-child(3) { animation-delay: 0.3s; }
+.member:nth-child(4) { animation-delay: 0.4s; }
+
+/* KEYFRAME */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
