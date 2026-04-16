@@ -355,13 +355,20 @@ footer {
 }
 
 .member a {
-  color: #005696;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #0077b5; /* LinkedIn blue */
+  color: #ffffff;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 500;
+  transition: 0.3s;
 }
 
 .member a:hover {
-  text-decoration: underline;
+  background: #005582;
+  transform: scale(1.05);
 }
 /* ================= LINKEDIN PREMIUM STYLE ================= */
 
