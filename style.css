@@ -131,6 +131,9 @@ nav a {
   border-radius: 8px;
   text-decoration: none;
 }
+.cards {
+  justify-items: center;
+}
 
 /* MOBILE */
 @media (max-width: 768px) {
