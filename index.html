@@ -2,111 +2,78 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Team Connect</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <header>
-  <h1>Team Connect</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="linkedin.html">LinkedIn</a>
-  </nav>
+<h1>Team Connect</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="linkedin.html">LinkedIn</a>
+</nav>
 </header>
 
 <section class="hero">
-  <h2>Meet Our Team</h2>
-  <p>Innovating together with passion</p>
+<h2>Meet Our Team</h2>
+<p>Innovating together with passion</p>
 </section>
 
 <section class="container">
-
 <div class="cards">
 
-<!-- KARANVEER -->
 <div class="card">
-  <div class="img-box">
-    <img src="Images/karanveer.jpg">
-    <div class="overlay">
-      
-    </div>
-  </div>
-  <h3>Karanveer Singh</h3>
-  <p class="role">Backend Manager & Project Manager</p>
+<div class="img-box">
+<img src="./images/KaranveerSingh.png" alt="Karanveer Singh">
+</div>
+<h3>Karanveer Singh</h3>
+<p class="role">Backend Manager & Project Manager</p>
 </div>
 
-<!-- MANPREET -->
 <div class="card">
-  <div class="img-box">
-    <img src="Images/manpreet.jpg">
-    <div class="overlay">
-     
-    </div>
-  </div>
-  <h3>Manpreet Kaur</h3>
-  <p class="role">Frontend Manager</p>
+<div class="img-box">
+<img src="./images/Mann.jpeg" alt="Manpreet Kaur">
+</div>
+<h3>Manpreet Kaur</h3>
+<p class="role">Frontend Manager</p>
 </div>
 
-<!-- JASMEEN -->
 <div class="card">
-  <div class="img-box">
-    <img src="Images/jasmeen.jpg">
-    <div class="overlay">
-      
-    </div>
-  </div>
-  <h3>Jasmeen Kaur</h3>
-  <p class="role">Frontend Manager</p>
+<div class="img-box">
+<img src="./images/jasmeen.jpg" alt="Jasmeen Kaur">
+</div>
+<h3>Jasmeen Kaur</h3>
+<p class="role">Frontend Manager</p>
 </div>
 
-<!-- HARSIMAR -->
 <div class="card">
-  <div class="img-box">
-    <img src="Images/harsimar.jpg">
-    <div class="overlay">
-      
-    </div>
-  </div>
-  <h3>Harsimarpreet Singh</h3>
-  <p class="role">Backend Manager</p>
+<div class="img-box">
+<img src="./images/harsimar.jpg" alt="Harsimarpreet Singh">
+</div>
+<h3>Harsimarpreet Singh</h3>
+<p class="role">Backend Manager</p>
 </div>
 
 </div>
 </section>
 
-<!-- WEB APP -->
 <section class="app-section">
+  
   <div class="app-box">
     <h2>🚀 Our Web Application</h2>
-    <p>Explore the cloud-based system we developed for managing firmware updates.</p>
+    
+    <p>
+      Explore the cloud-based system we developed for managing and tracking firmware updates efficiently.
+    </p>
+
     <a href="https://main.d1nnbkgoms7e89.amplifyapp.com" target="_blank" class="app-btn">
       Launch Live App
     </a>
   </div>
+
 </section>
-
-<!-- SCROLL ANIMATION -->
-<script>
-const cards = document.querySelectorAll('.card');
-
-window.addEventListener('scroll', () => {
-  const trigger = window.innerHeight * 0.85;
-
-  cards.forEach(card => {
-    const top = card.getBoundingClientRect().top;
-
-    if (top < trigger) {
-      card.style.opacity = 1;
-      card.style.transform = "translateY(0)";
-    }
-  });
-});
-</script>
 
 </body>
 </html>
